@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/outdoor_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="室外地址"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginStart="8dp" />
+    <TextView
+        android:id="@+id/indoor_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="室内地址"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/holo_red_light"/>
+    <TextView
+        android:id="@+id/outdoor_pm25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outdoor_addr"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:text="25"
+        android:layout_marginStart="18dp"
+        android:textColor="@android:color/holo_red_light" />
+    <TextView
+        android:id="@+id/indoor_pm25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indoor_addr"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:text="10"
+        android:layout_marginEnd="18dp"
+        android:textColor="@android:color/holo_red_light" />
+    <View
+        android:id="@+id/line_hori"
+        android:layout_width="368dp"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indoor_pm25"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_hori"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="2017-06-20"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/holo_red_light" />
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_hori"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="来源于：依瓦达"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/holo_red_light" />
+</android.support.constraint.ConstraintLayout>
